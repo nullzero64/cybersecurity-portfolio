@@ -1,11 +1,3 @@
-## Table of contents
-
-[Query a database](#bookmark=kix.17im758tya0y)  
-[Apply filters to SQL queries](#bookmark=kix.rvy0mf2f79a7)  
-[Join tables](#bookmark=kix.wh6d7vwmyngo)  
-[Perform calculations](#bookmark=kix.re6d99kwhxi8)  
----
-
 ## Query a database
 
 The SELECT, FROM, and ORDER BY keywords are used when retrieving information from a database.
