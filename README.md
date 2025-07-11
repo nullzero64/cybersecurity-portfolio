@@ -1,12 +1,8 @@
-# 🌐 Cybersecurity Portfolio
+# Cybersecurity Portfolio
 
----
 
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Level--Up--red)](https://tryhackme.com/)
-[![Python](https://img.shields.io/badge/Python-Beginner--blue)](https://python.org/)
-[![Linux](https://img.shields.io/badge/Linux-Enthusiast--yellow)](https://linux.org/)
 
----
+
 
 ## Introduction
 I am a cybersecurity beginner sharing my journey, projects, experiences, skills, and resources.
