@@ -2,7 +2,93 @@
 
 ## Project Description
 
-This project demonstrates how to filter SQL database tables to retrieve specific data relevant to analysis and security. You’ll learn how to use AND, OR, and NOT operators to refine your queries, understand the syntax for each, and see the results of applying these powerful filters. Mastering these filtering techniques will help you efficiently extract and analyze information from large datasets.
+This project demonstrates how to filter SQL database tables to retrieve specific data relevant to analysis and security. You’ll learn how to use AND, OR, and NOT operators to refine your queries, understand how to filter with dates and times, and leverage pattern matching with LIKE.
+
+---
+
+## Using LIKE to Search for a Pattern
+
+The `LIKE` operator allows you to search for data that matches a specific pattern within a column. Wildcards like `%` (any sequence of characters) and `_` (a single character) are commonly used.
+
+**Example: Retrieve employees whose email ends with "company.com"**
+
+```sql
+SELECT *
+FROM employees
+WHERE email LIKE '%@company.com';
+```
+
+**Example: Retrieve login attempts from users whose usernames start with "admin":**
+
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE username LIKE 'admin%';
+```
+
+---
+
+## Filtering for Dates and Times
+
+Filtering with dates and times is essential for time-based analysis. Typically, this involves comparing date or time columns using operators like `=`, `<`, `>`, `<=`, `>=`, or using functions such as `BETWEEN`.
+
+**Example: Retrieve login attempts between May 8, 2022 and May 10, 2022:**
+
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE login_date BETWEEN '2022-05-08' AND '2022-05-10';
+```
+
+**Example: Retrieve logins that occurred before 8am:**
+
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE login_time < '08:00';
+```
+
+---
+
+## Using AND and OR to Filter on Multiple Conditions
+
+Combine `AND` and `OR` to create more advanced filters.
+
+- `AND` returns rows where all conditions are true.
+- `OR` returns rows where at least one condition is true.
+- Parentheses `()` can be used to group conditions and control precedence.
+
+**Example: Retrieve failed login attempts outside of business hours (before 8am or after 6pm):**
+
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE success = 0 AND (login_time < '08:00' OR login_time > '18:00');
+```
+
+---
+
+## Using NOT in Filters
+
+The `NOT` operator inverts a condition, returning rows where the condition is false.
+
+**Example: Retrieve employees not in the HR department:**
+
+```sql
+SELECT *
+FROM employees
+WHERE NOT department = 'HR';
+```
+
+**Example: Retrieve login attempts not from usernames starting with "test":**
+
+```sql
+SELECT *
+FROM log_in_attempts
+WHERE NOT username LIKE 'test%';
+```
+
+---
 
 ## Retrieve after hours failed login attempts
 
@@ -72,4 +158,4 @@ WHERE department != 'IT';
 
 ## Summary
 
-Efficiently filtering data is crucial for security analysis and decision-making. By using SQL operators like AND, OR, and NOT, you can quickly isolate relevant events—such as failed logins after work hours, activity on specific dates, or actions outside a particular region. These skills empower you to extract actionable insights from your databases and better protect your organization, making your data handling both targeted and effective.
+Efficiently filtering data is crucial for security analysis and decision-making. By using SQL operators like AND, OR, NOT, and LIKE, and by understanding how to filter by dates and times, you can quickly isolate relevant events—such as failed logins after work hours or users from specific departments. Mastery of these filters is essential for effective cybersecurity analytics.
