@@ -60,15 +60,6 @@ I became interested in cybersecurity after experiencing several cyber attacks my
 #### 🖥️ Languages & Shells
 - Bash, PowerShell, Python, SQL, Git
 
----
-
-## Portfolio Write-Ups
-
-- [Blue Room Write-up](./writeups/blue.md)
-- [ICE Room Analysis](./writeups/ice.md)
-
----
-
 ## What’s Next
 - Complete the Google Cybersecurity Certificate.
 - Participate in more CTFs and write up solutions.
