@@ -60,6 +60,8 @@ I became interested in cybersecurity after experiencing several cyber attacks my
 #### 🖥️ Languages & Shells
 - Bash, PowerShell, Python, SQL, Git
 
+and I've used more!
+
 ## What’s Next
 - Complete the Google Cybersecurity Certificate.
 - Participate in more CTFs and write up solutions.
