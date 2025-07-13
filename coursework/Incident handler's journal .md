@@ -26,12 +26,20 @@ As you continue through this course, you may use this template to record your fi
 
 ---
 
-| Date:  Record the date of the journal entry. | Entry: Record the journal entry number. |  |  |
+| Date:  Record the date of the journal entry. | Entry: July 14th, 2025 @ 12:24 AM (Journal Entry: 3) | | |
 | :---- | :---- | ----- | ----- |
-| Description | Provide a brief description about the journal entry. |  |  |
-| Tool(s) used | List any cybersecurity tools that were used. |  |  |
-| The 5 W's  | Capture the 5 W's of an incident. **Who** caused the incident? **What** happened? **When** did the incident occur? **Where** did the incident happen? **Why** did the incident happen? |  |  |
-| Additional notes | Include any additional thoughts, questions, or findings. |  |  |
+| Description | This entry is about a web vulnerability that caused PII to be exfiltrated and held for ransom. |  |  |
+| Tool(s) used | VirusTotal |  |  |
+| The 5 W's  | **Who?** IP 176[.]157[.]125[.]9 
+|            |**What?** Critical Web Vulnerability
+|            |**When?** 3:13 PM PT, on December 22, 2022
+|            |**Where?** a mid-sized retail company/e-commerce website
+|            |**Why?** Financial Gain via Ransom of Sensitive Data |  |  |
+| Additional notes | 
+|                  |At approximately 3:13 p.m., PT, on December 22, 2022, an employee received an email from an external email address. The email sender claimed that they had successfully stolen customer data. In exchange for not releasing the data to public forums, the sender requested a $25,000 cryptocurrency payment. The employee assumed the email was spam and deleted it.
+|                  |On December 28, 2022, the same employee received another email from the same sender. This email included a sample of the stolen customer data and an increased payment demand of $50,000. 
+|                  |On the same day, the employee notified the security team, who began their investigation into the incident. Between December 28 and December 31, 2022, the security team concentrated on determining how the data was stolen and the extent of the theft.
+ |  |  |
 
 ---
 
