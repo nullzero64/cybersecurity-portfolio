@@ -13,12 +13,15 @@ As you continue through this course, you may use this template to record your fi
 
 ---
 
-| Date:  Record the date of the journal entry. | Entry: Record the journal entry number. |  |  |
+| Date:  Record the date of the journal entry. | Entry: July 13th, 2025 Journal Entry: 2 |  |  |
 | :---- | :---- | ----- | ----- |
-| Description | Provide a brief description about the journal entry. |  |  |
-| Tool(s) used | List any cybersecurity tools that were used. |  |  |
-| The 5 W's  | Capture the 5 W's of an incident. **Who** caused the incident? **What** happened? **When** did the incident occur? **Where** did the incident happen? **Why** did the incident happen? |  |  |
-| Additional notes | Include any additional thoughts, questions, or findings. |  |  |
+| Description | This Entry is about a phishing email that has malware attached to it. |  |  |
+| Tool(s) used | VirusTotal |  |  |
+| The 5 W's  | **Who?** IP 176[.]157[.]125[.]9 **What?** Phishing Email 
+|            |**When?** Wednesday, July 20, 2022 09:30:14 AM 
+|            |**Where?** a financial services company 
+|            |**Why?** Employee fell for a phishing email, threat actor wanted sensitive information with FragTor, a backdoor trojan |  |  |
+| Additional notes | The email had a file attachment named "bfsvc.exe" that gave a hash output of '54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b', after checking VirusTotal, it is confirmed to be a malicious software, specifically Fragtor or Flagpro, a backdoor trojan; also the email had plenty of obvious mispellings in it. |  |  |
 
 ---
 
