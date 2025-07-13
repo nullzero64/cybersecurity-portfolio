@@ -1,4 +1,4 @@
-## PASTA worksheet
+## PASTA worksheet exemplar reference
 
 ---
 
