@@ -4,7 +4,7 @@
 
 As you continue through this course, you may use this template to record your findings after completing an activity or to take notes on what you've learned about a specific tool or concept. You can also use this journal as a way to log the key takeaways about the different cybersecurity tools or concepts you encounter in this course.
 
-| Date:  Record the date of the journal entry. | Entry: July 13th, 2025 Journal Entry: 1 |  |  |
+| Date:  Record the date of the journal entry. | Entry: July 13th, 2025 (Journal Entry: 1) | | |
 | :---- | :---- | ----- | ----- |
 | Description | This Journal is to record an incident involving a ransomware attack. |  |  |
 | Tool(s) used | List any cybersecurity tools that were used. |  |  |
@@ -13,7 +13,7 @@ As you continue through this course, you may use this template to record your fi
 
 ---
 
-| Date:  Record the date of the journal entry. | Entry: July 13th, 2025 Journal Entry: 2 |  |  |
+| Date:  Record the date of the journal entry. | Entry: July 13th, 2025 (Journal Entry: 2) | | |
 | :---- | :---- | ----- | ----- |
 | Description | This Entry is about a phishing email that has malware attached to it. |  |  |
 | Tool(s) used | VirusTotal |  |  |
