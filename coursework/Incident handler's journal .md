@@ -29,8 +29,8 @@ As you continue through this course, you may use this template to record your fi
 | Date:  Record the date of the journal entry. | Entry: July 14th, 2025 @ 12:24 AM (Journal Entry: 3) | | |
 | :---- | :---- | ----- | ----- |
 | Description | This entry is about a web vulnerability that caused PII to be exfiltrated and held for ransom. |  |  |
-| Tool(s) used | VirusTotal |  |  |
-| The 5 W's  | **Who?** IP 176[.]157[.]125[.]9 
+| Tool(s) used | N/A, Final Report Findings |  |  |
+| The 5 W's  | **Who?** Malicious Actor
 |            |**What?** Critical Web Vulnerability
 |            |**When?** 3:13 PM PT, on December 22, 2022
 |            |**Where?** a mid-sized retail company/e-commerce website
