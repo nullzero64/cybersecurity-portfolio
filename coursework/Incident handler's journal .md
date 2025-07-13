@@ -17,7 +17,8 @@ As you continue through this course, you may use this template to record your fi
 | :---- | :---- | ----- | ----- |
 | Description | This Entry is about a phishing email that has malware attached to it. |  |  |
 | Tool(s) used | VirusTotal |  |  |
-| The 5 W's  | **Who?** IP 176[.]157[.]125[.]9 **What?** Phishing Email 
+| The 5 W's  | **Who?** IP 176[.]157[.]125[.]9 
+|            |**What?** Phishing Email 
 |            |**When?** Wednesday, July 20, 2022 09:30:14 AM 
 |            |**Where?** a financial services company 
 |            |**Why?** Employee fell for a phishing email, threat actor wanted sensitive information with FragTor, a backdoor trojan |  |  |
