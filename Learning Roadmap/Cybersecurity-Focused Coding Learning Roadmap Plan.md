@@ -4,7 +4,8 @@ Level up your cybersecurity skills with a code-centric roadmap! This plan covers
 
 ---
 
-## 1. 🖥️ Environment Setup
+<details open>
+<summary>1. 🖥️ Environment Setup</summary>
 
 - **Python**: [Download Latest](https://www.python.org/downloads/)
 - **Linux VM (Kali/Parrot OS)**: For pentesting tools ([Kali](https://www.kali.org/get-kali/), [Parrot](https://www.parrotsec.org/download/))
@@ -12,6 +13,8 @@ Level up your cybersecurity skills with a code-centric roadmap! This plan covers
 - **IDE**: [VSCode](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/)
 - **Text Editor**: [Sublime Text](https://www.sublimetext.com/), Notepad++
 - **Git**: [Download](https://git-scm.com/downloads) for version control
+
+</details>
 
 ---
 
@@ -122,7 +125,8 @@ Level up your cybersecurity skills with a code-centric roadmap! This plan covers
 
 ---
 
-## 6. 👾 Practice & Community
+<details>
+<summary>6. 👾 Practice & Community</summary>
 
 - [TryHackMe](https://tryhackme.com/)
 - [HackTheBox](https://www.hackthebox.com/)
@@ -131,20 +135,28 @@ Level up your cybersecurity skills with a code-centric roadmap! This plan covers
 - [r/Netsec](https://reddit.com/r/netsec)
 - [r/Malware](https://reddit.com/r/Malware)
 
+</details>
+
 ---
 
-## 7. ⚖️ Ethics & Legal
+<details>
+<summary>7. ⚖️ Ethics & Legal</summary>
 
 - **Always follow ethical guidelines.**
 - Use your skills _only_ in authorized environments and for educational/research purposes.
 
+</details>
+
 ---
 
-## 💡 Progression Example
+<details>
+<summary>💡 Progression Example</summary>
 
 - **Python**: Build tools & automate tasks
 - **PowerShell/CMD**: Master Windows scripting & automation
 - **Assembly**: Reverse engineer & understand malware at the lowest level
+
+</details>
 
 ---
 
