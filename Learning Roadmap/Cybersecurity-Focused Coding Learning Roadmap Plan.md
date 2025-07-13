@@ -1,109 +1,151 @@
-# Cybersecurity-Focused Coding Learning Plan
+# 🛡️ Cybersecurity-Focused Coding Learning Plan
 
-## **1. Set Up Your Environment**
-- Install Python (latest version)
-- Install a Linux virtual machine (like Kali Linux or Parrot OS) for pentesting tools
-- Set up a Windows VM for PowerShell/CMD practice
-- Install an IDE (VSCode, PyCharm) and a text editor (Sublime, Notepad++)
-- Install Git for version control
+Level up your cybersecurity skills with a code-centric roadmap! This plan covers Python, Assembly, and PowerShell/CMD scripting for penetration testing, malware analysis, and red teaming, with plenty of hands-on projects and resources.
 
 ---
 
-## **2. Python for Penetration Testing**
-### **Foundations (2-4 weeks)**
+## 1. 🖥️ Environment Setup
+
+- **Python**: [Download Latest](https://www.python.org/downloads/)
+- **Linux VM (Kali/Parrot OS)**: For pentesting tools ([Kali](https://www.kali.org/get-kali/), [Parrot](https://www.parrotsec.org/download/))
+- **Windows VM**: For PowerShell/CMD practice
+- **IDE**: [VSCode](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/)
+- **Text Editor**: [Sublime Text](https://www.sublimetext.com/), Notepad++
+- **Git**: [Download](https://git-scm.com/downloads) for version control
+
+---
+
+<details>
+<summary>2. 🐍 Python for Penetration Testing</summary>
+
+### Foundations (2-4 weeks)
 - Python syntax, data structures, functions, modules
 - File and network operations
 - Exception handling
 
 **Resources:**
 - [Python.org Tutorials](https://docs.python.org/3/tutorial/)
+- [Codecademy: Learn Python 3](https://www.codecademy.com/learn/learn-python-3)
+- [Coursera: Python for Everybody (Free to Audit)](https://www.coursera.org/specializations/python)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
-### **Cybersecurity & Pentesting Libraries (4-8 weeks)**
-- `socket`, `os`, `subprocess`, `requests`, `scapy`
-- Scripting port scanners, brute forcers, enumeration tools
-- Parse and manipulate network packets
+### Cybersecurity & Pentesting Libraries (4-8 weeks)
+- Key libraries: `socket`, `os`, `subprocess`, `requests`, `scapy`
+- Scripting: port scanners, brute forcers, enumeration tools
+- Parse & manipulate network packets
 
 **Resources:**
-- [Violent Python](https://www.amazon.com/Violent-Python-Cookbook-Penetration-Engineers/dp/1597499579)
-- [Black Hat Python](https://www.nostarch.com/blackhatpython2)
+- [TryHackMe: Python for Pentesting](https://tryhackme.com/room/pythonforpentesting)
+- [HackTheBox Academy: Python for Pentesters](https://academy.hackthebox.com/course/preview/python-for-pentesters)
+- [Real Python: Networking with Python](https://realpython.com/python-sockets/)
 
-### **Projects**
+### Projects
 - Port scanner
 - SSH brute forcer
 - Packet sniffer
 - Directory/file brute forcer
 
+</details>
+
 ---
 
-## **3. Assembly Language for Malware Analysis and Red Teaming**
-### **Foundations (2-4 weeks)**
+<details>
+<summary>3. ⚙️ Assembly Language for Malware Analysis & Red Teaming</summary>
+
+### Foundations (2-4 weeks)
 - Learn x86/x64 assembly basics
-- Understand CPU registers, memory, stack/heap, instructions
+- CPU registers, memory, stack/heap, instructions
 - Write simple programs (Hello World, loops, arithmetic)
 
 **Resources:**
-- [PC Assembly Language](https://pacman128.github.io/static/pcasm-book.pdf)
-- [Online x86 Emulator](https://emulator.pvx.ru/)
+- [PC Assembly Language (PDF)](https://www.paulcarter.com/pcasm/)
+- [OpenSecurityTraining: Intro to x86](https://www.opensecuritytraining.info/IntroX86.html)
+- [YouTube: x86 Assembly Crash Course](https://www.youtube.com/watch?v=75gBFiFtAb8)
+- [Online x86 Emulator](https://copy.sh/v86/)
 
-### **Malware Development Concepts (6-12 weeks)**
+### Malware Development Concepts (6-12 weeks)
 - Shellcode creation and injection
-- Reverse engineering (use Ghidra, IDA Free, or Radare2)
+- Reverse engineering (use Ghidra, IDA Free, Radare2)
 - Windows/Linux system calls
 
 **Resources:**
-- [Practical Malware Analysis](https://www.nostarch.com/malware)
-- [Malware Unicorn’s RE101](https://malwareunicorn.org/workshops/re101.html)
-- [SecurityTube Assembly Language](https://www.securitytube.net/groups?operation=view&groupId=5)
+- [Malware Unicorn’s RE101 Workshop](https://malwareunicorn.org/workshops/re101.html)
+- [OpenSecurityTraining: Intro to Reverse Engineering](https://www.opensecuritytraining.info/IntroReverseEngineering.html)
+- [Practical Malware Analysis Labs (Free)](https://practicalmalwareanalysis.com/labs/)
+- [Ghidra Ninja: Beginner Ghidra RE](https://ghidra.re/)
 
-**Note:** Always use a safe, isolated lab environment for malware research. Never release or run malware outside your test VMs.
+> **⚠️ Note:** Always use a safe, isolated lab environment for malware research.
+
+</details>
 
 ---
 
-## **4. PowerShell and CMD Scripting**
-### **Foundations (2-4 weeks)**
+<details>
+<summary>4. 🖥️ PowerShell & CMD Scripting</summary>
+
+### Foundations (2-4 weeks)
 - Basic commands, loops, variables, functions
 - File, process, and network management
 
 **Resources:**
-- [Microsoft PowerShell Docs](https://docs.microsoft.com/en-us/powershell/)
+- [Microsoft PowerShell Docs](https://docs.microsoft.com/powershell/)
+- [Microsoft Learn: PowerShell Modules](https://learn.microsoft.com/en-us/powershell/scripting/learn/)
 - [HackTricks PowerShell](https://book.hacktricks.xyz/windows/pentesting-with-powershell)
 - [SS64 CMD Reference](https://ss64.com/nt/)
 
-### **Cybersecurity Applications (4-8 weeks)**
-- Automate enumeration and privilege escalation tasks
-- Write scripts for Active Directory recon, lateral movement
-- Evade basic AV using obfuscation
+### Cybersecurity Applications (4-8 weeks)
+- Automate enumeration/privilege escalation
+- Scripts for Active Directory recon, lateral movement
+- Obfuscation for AV evasion
 
-**Projects:**
-- User and group enumeration script
+**Resources:**
+- [TryHackMe: Windows Privilege Escalation](https://tryhackme.com/room/windowsprivesc)
+- [YouTube: PowerShell for Pentesters](https://www.youtube.com/playlist?list=PLBf0hzazHTGZcBCRqQmJ3H5cXKkQ4PBpt)
+
+### Projects
+- User/group enumeration script
 - Automated log parser
 - Custom reverse shell
 
----
-
-## **5. Practice and Community**
-- Participate in CTFs (TryHackMe, HackTheBox, PicoCTF)
-- Join forums/Discords for pentesting and malware analysis
-- Read security blogs and follow tool releases on GitHub
+</details>
 
 ---
 
-## **6. Ethics & Legal**
-- Always follow ethical guidelines
-- Use your skills only in authorized environments and for educational/research purposes
+<details>
+<summary>5. 🦠 Malware Development & Analysis</summary>
+
+- [Malware Analysis Tutorials (YouTube)](https://www.youtube.com/results?search_query=malware+analysis+tutorial)
+- [Reverse Engineering Malware (Coursera, Free to Audit)](https://www.coursera.org/learn/reverse-engineering)
+- [Zero2Automated: Malware Analysis Course](https://www.zero2automated.com/) (Paid, [Free Blog](https://blog.zero2automated.com/))
+
+</details>
 
 ---
 
-**Tip:** Document your learning journey and share non-malicious tools/scripts on GitHub to build your portfolio.
+## 6. 👾 Practice & Community
+
+- [TryHackMe](https://tryhackme.com/)
+- [HackTheBox](https://www.hackthebox.com/)
+- [PicoCTF](https://picoctf.org/)
+- [Red Team Village Discord](https://discord.gg/rtv)
+- [r/Netsec](https://reddit.com/r/netsec)
+- [r/Malware](https://reddit.com/r/Malware)
 
 ---
 
-## **Progression Example**
-1. Python: Build tools and automate tasks
-2. PowerShell/CMD: Master Windows environments and scripting
-3. Assembly: Reverse engineer and understand malware at the lowest level
+## 7. ⚖️ Ethics & Legal
+
+- **Always follow ethical guidelines.**
+- Use your skills _only_ in authorized environments and for educational/research purposes.
 
 ---
 
-### Ready to start? Pick one track and set a weekly schedule. If you need resource links, project ideas, or have specific questions, just ask!
+## 💡 Progression Example
+
+- **Python**: Build tools & automate tasks
+- **PowerShell/CMD**: Master Windows scripting & automation
+- **Assembly**: Reverse engineer & understand malware at the lowest level
+
+---
+
+> **Tip:** Document your learning journey and share non-malicious tools/scripts on GitHub to build your portfolio!
