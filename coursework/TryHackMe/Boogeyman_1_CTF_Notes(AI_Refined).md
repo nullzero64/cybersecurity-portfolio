@@ -1,3 +1,5 @@
+##### DISCLAIMER: this is refined by AI using already EXISTING NOTES I made myself to look nicer and more accurate in writing.
+
 # Boogeyman 1 CTF Notes
 
 **Overview**:  
