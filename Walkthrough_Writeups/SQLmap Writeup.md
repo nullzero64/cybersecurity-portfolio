@@ -77,7 +77,7 @@ you have not declared cookie(s), while server wants to set its own ('PHPSESSID=7
 
 However, using burp suite, I found a vulnerable parameter to use, and copied it to a file called `o_type.txt`
 
-```http
+```html
 POST /blood/nl-search.php HTTP/1.1
 Host: 10.201.124.65
 Content-Length: 16
@@ -235,7 +235,9 @@ Table: flag
 ### Method 2
 
 **Method 2 Screenshot:**
-![[Pasted image 20251010221719.png]]
+
+<img width="695" height="427" alt="image" src="https://github.com/user-attachments/assets/467ec461-b5d9-4267-8a95-68d429a95687" />
+
 **Method 2 Report**
 ```plain
 [22:12:34] [INFO] fetching tables for database: 'blood'
@@ -280,7 +282,8 @@ Table: users
 
 # <span style="color: #FFD700;"> The answer to the final question is </span> `thm{sqlm@p_is_L0ve}`<span style="color: #FFD700;">!</span>
 
-# = FINISH TOOL ROOM =
-![[Pasted image 20251010222532.png]]
+# = FINISH =
+
+<img width="1127" height="761" alt="image" src="https://github.com/user-attachments/assets/5867f7c3-3942-4c4f-b664-147da72a3aa6" />
 
 `yay`
