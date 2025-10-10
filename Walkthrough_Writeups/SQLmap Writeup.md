@@ -3,7 +3,7 @@
 - **Pentester: Taryn Shutlar / WispZero**
 - **Time & Date: 10th of October, 8:40 PM**
 - **Tools: SQLmap, GoBuster**
-- **TryHackMe Room: [sqlmap](https://tryhackme.com/room/sqlmap)
+- **TryHackMe Room: [sqlmap](https://tryhackme.com/room/sqlmap)**
 
 # Tasks
 
